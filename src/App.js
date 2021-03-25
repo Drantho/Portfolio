@@ -14,8 +14,8 @@ function App() {
         <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
           <Navbar />
         </Header>
-        <Switch>
-          <Content style={{margin: "64px"}}>
+        <Content style={{ margin: "64px" }}>
+          <Switch>
             <Route exact path="/">
               <Home />
             </Route>
@@ -25,8 +25,8 @@ function App() {
             <Route path="*">
               <NotFound />
             </Route>
-          </Content>
-        </Switch>
+          </Switch>
+        </Content>
       </Router>
     </Layout>
   );
