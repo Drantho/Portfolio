@@ -16,18 +16,18 @@ export default function Home() {
             <section className="section" id="intro">
 
 
-                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-                    <Col className="gutter-row" span={6}>
+                <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} style={{border: "2px solid green"}}>
+                    <Col className="gutter-row" xl={8} lg={8} md={8} sm={24}>
                         <img className="portrait" src="https://res.cloudinary.com/drantho/image/upload/v1614876275/jtlw9xzwwwwgayavxqyk.jpg" />
                     </Col>
-                    <Col className="gutter-row" span={6}>
+                    <Col className="gutter-row" xl={16} lg={16} md={16} sm={24}>
                         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-                            <Col className="gutter-row" span={12}>
-                                <h2 className="intro-text">My name is Anthony and I&nbsp;build&nbsp;websites&nbsp;that&nbsp;{verbs[currentVerb]}</h2>
+                            <Col className="gutter-row" span={24}>
+                                <h2 className="intro-text">My name is Anthony and I build websites that {verbs[currentVerb]}</h2>
                             </Col>
                         </Row>
                         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }}>
-                            <Col className="gutter-row" span={12}>
+                            <Col className="gutter-row" span={24}>
                                 <Carousel
                                     autoplay
                                     autoplaySpeed={4500}
