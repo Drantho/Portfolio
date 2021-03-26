@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import { Layout } from 'antd';
+import Project from "./pages/Project";
 const { Header, Footer, Sider, Content } = Layout;
 
 function App() {
@@ -21,6 +22,9 @@ function App() {
             </Route>
             <Route exact path="/home">
               <Home />
+            </Route>
+            <Route exact path="/project/:name">
+              <Project/>
             </Route>
             <Route path="*">
               <NotFound />

@@ -4,7 +4,7 @@ import { Card } from "antd";
 
 export default function ProjectCard(props) {
     return (
-        <Link>
+        <Link to={`/project/${props.name}`}>
             <Card
                 hoverable
                 title={props.displayName}

@@ -21,7 +21,7 @@ body::before{
     background: rgba(0, 0, 0, 0.6) !important;
 }
 
-h2, h3{
+h1, h2, h3{
     color: white;
 }
 
