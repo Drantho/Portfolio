@@ -1,6 +1,7 @@
 import { React, useState } from 'react';
 import { Link } from "react-router-dom";
-import { Carousel, Row, Col, Space, Card } from "antd";
+import { Carousel, Row, Col, Space, } from "antd";
+import { GithubOutlined, LinkedinOutlined, MailOutlined } from "@ant-design/icons";
 import ProjectCard from "../components/ProjectCard";
 import data from "../data";
 
@@ -63,7 +64,7 @@ export default function Home() {
                     <Row className="gutter-row" xl={16} lg={16} md={16} sm={24}>
                         {data.map(item => {
                             return <Col xl={8} lg={8} md={12} sm={24}>
-                                <ProjectCard {...item}/>
+                                <ProjectCard {...item} />
                             </Col>
                         })}
                     </Row>
@@ -102,6 +103,23 @@ export default function Home() {
             </section>
             <section className="section" id="contact">
                 <h2>Contact</h2>
+                <Row justify="center" style={{ marginTop: "50px" }}>
+                    <Col xl={8} lg={8} md={8} sm={24} style={{ textAlign: "center" }}>
+                        <a href="https://github.com/Drantho">
+                            <GithubOutlined style={{ fontSize: "8rem" }} />
+                        </a>
+                    </Col>
+                    <Col xl={8} lg={8} md={8} sm={24} style={{ textAlign: "center" }}>
+                        <a href="https://www.linkedin.com/in/drantho/">
+                            <LinkedinOutlined style={{ fontSize: "8rem" }} />
+                        </a>
+                    </Col>
+                    <Col xl={8} lg={8} md={8} sm={24} style={{ textAlign: "center" }}>
+                        <a href="mailto:mitchellanthonyd@gmail.com">
+                            <MailOutlined style={{ fontSize: "8rem" }} />
+                        </a>
+                    </Col>
+                </Row>
             </section>
         </div>
     )
