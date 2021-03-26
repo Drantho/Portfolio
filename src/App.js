@@ -15,7 +15,7 @@ function App() {
         <Header style={{ position: 'fixed', zIndex: 1, width: '100%' }}>
           <Navbar />
         </Header>
-        <Content style={{ margin: "64px" }}>
+        <Content style={{ margin: "75px" }}>
           <Switch>
             <Route exact path="/">
               <Home />

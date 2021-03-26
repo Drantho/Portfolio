@@ -9,6 +9,7 @@ export default function ProjectCard(props) {
                 hoverable
                 title={props.displayName}
                 cover={<img alt={`screenshot for ${props.displayName}`} src={props.image} />}
+                style={{marginTop: "15px"}}
             >
             </Card>
         </Link>

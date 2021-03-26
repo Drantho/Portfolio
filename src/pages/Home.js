@@ -40,16 +40,24 @@ export default function Home() {
                                     effect="fade"
                                 >
                                     <div className="panel">
-                                        <video muted autoplay="true" loop="true" src="https://res.cloudinary.com/drantho/video/upload/c_fill,w_670/v1615510871/ezgif.com-gif-maker_cjf7al.webm" />
+                                        <Link to="/project/gameoflife">
+                                            <video muted autoplay="true" loop="true" src="https://res.cloudinary.com/drantho/video/upload/c_fill,w_670/v1615510871/ezgif.com-gif-maker_cjf7al.webm" />
+                                        </Link>
                                     </div>
                                     <div className="panel">
-                                        <img src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1614075793/nobrainermeals_e1bpca.png" />
+                                        <Link to="/project/nobrainermeals">
+                                            <img src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1614075793/nobrainermeals_e1bpca.png" />
+                                        </Link>
                                     </div>
                                     <div className="panel">
-                                        <img src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638401/mervin_graph_ijbjjr.png" />
+                                        <Link to="maintenance">
+                                            <img src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638401/mervin_graph_ijbjjr.png" />
+                                        </Link>
                                     </div>
                                     <div className="panel">
-                                        <img src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638834/screenshot-penrv.com-2021.03.24-19_18_14_gpjplw.png" />
+                                        <Link to="peninsularv">
+                                            <img src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638834/screenshot-penrv.com-2021.03.24-19_18_14_gpjplw.png" />
+                                        </Link>
                                     </div>
                                 </Carousel>
                             </Col>
@@ -103,18 +111,18 @@ export default function Home() {
             </section>
             <section className="section" id="contact">
                 <h2>Contact</h2>
-                <Row justify="center" style={{ marginTop: "50px" }}>
-                    <Col xl={8} lg={8} md={8} sm={24} style={{ textAlign: "center" }}>
+                <Row justify="center">
+                    <Col xl={8} lg={8} md={8} sm={24} xs={24} style={{ textAlign: "center" }}>
                         <a href="https://github.com/Drantho">
                             <GithubOutlined style={{ fontSize: "8rem" }} />
                         </a>
                     </Col>
-                    <Col xl={8} lg={8} md={8} sm={24} style={{ textAlign: "center" }}>
+                    <Col xl={8} lg={8} md={8} sm={24} xs={24} style={{ textAlign: "center" }}>
                         <a href="https://www.linkedin.com/in/drantho/">
                             <LinkedinOutlined style={{ fontSize: "8rem" }} />
                         </a>
                     </Col>
-                    <Col xl={8} lg={8} md={8} sm={24} style={{ textAlign: "center" }}>
+                    <Col xl={8} lg={8} md={8} sm={24} xs={24} style={{ textAlign: "center" }}>
                         <a href="mailto:mitchellanthonyd@gmail.com">
                             <MailOutlined style={{ fontSize: "8rem" }} />
                         </a>

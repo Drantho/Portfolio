@@ -14,7 +14,7 @@ export default function Navbar() {
 
     const scrollWithOffset = element => {
         const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
-        const yOffset = -70; 
+        const yOffset = -75; 
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
     }
 

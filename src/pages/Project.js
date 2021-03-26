@@ -10,7 +10,7 @@ export default function Project() {
     const project = data.find(item => item.name.toLocaleLowerCase() === name.toLocaleLowerCase());
 
     return (
-        <Space direction="vertical">
+        <Space direction="vertical" id="project">
             <h1>{project.displayName}</h1>
 
             <Image

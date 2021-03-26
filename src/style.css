@@ -81,3 +81,56 @@ p, .technologies li, h3{
     background:#1890ff !important;
     color:#1890ff !important;
 }
+
+#contact .ant-row{
+    padding: 100px 0 0 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .ant-layout{
+        width: 100%;
+    }
+
+    .ant-layout-content{
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .ant-col{
+        padding: 0;
+    }
+
+    .intro-text{
+        font-size: 1.5rem;
+    }
+
+    .section{
+        min-height: 600px;
+        height: auto;
+        margin: auto;
+        width: 98%;
+        color: white;
+    }
+
+    p, .technologies li, h3{
+        font-size: 0.9rem;
+        letter-spacing: 2.1px;
+    }
+
+    .ant-col p{
+        padding: 0 20ox !important;
+    }
+
+    #contact .ant-row{
+        padding: 10px 0 0 0;
+    }
+
+    .portrait{
+        padding: 45px;
+    }
+
+    #project{
+        margin-top: 75px;
+    }
+}
