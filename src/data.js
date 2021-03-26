@@ -49,8 +49,8 @@ const data = [
             "Quiz ends at 0 seconds or all questions answered",
             "Users' top 10 high scores are saved in local storage.",
         ],
-        github: "github.com/Drantho/QuizApp",
-        live: "drantho.github.io/QuizApp/"
+        github: "https://github.com/Drantho/QuizApp",
+        live: "https://drantho.github.io/QuizApp/"
     },
     {
         displayName: "Peninsula RV",
@@ -193,8 +193,8 @@ const data = [
             "Background changes based on weather description.",
             "UV warnings color-coded by severity.",
         ],
-        github: "",
-        live: ""
+        github: "https://github.com/Drantho/WeatherApp",
+        live: "https://drantho.github.io/WeatherApp/"
     },
     {
         displayName: "Game of Life",
@@ -232,8 +232,8 @@ const data = [
             "View and add suggested activities by type.",
             "View and cycle through inspirational quotes."
         ],
-        github: "github.com/Z1springer/what_to_do",
-        live: "z1springer.github.io/what_to_do/"
+        github: "https://github.com/Z1springer/what_to_do",
+        live: "https://z1springer.github.io/what_to_do/"
     },
     {
         displayName: "State Contiguity Chart",
@@ -329,8 +329,8 @@ const data = [
             "User is provided with select password link",
             "User can manually customize password",
         ],
-        github: "github.com/Drantho/PasswordGenerator",
-        live: "drantho.github.io/PasswordGenerator/"
+        github: "https://github.com/Drantho/PasswordGenerator",
+        live: "https://drantho.github.io/PasswordGenerator/"
     },
     {
         displayName: "Minterest",
