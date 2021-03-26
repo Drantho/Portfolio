@@ -79,7 +79,7 @@ export default function Home() {
                     </Col>
                     <Col xl={12} lg={12} md={12} sm={24}>
                         <h3>Technologies</h3>
-                        <ul>
+                        <ul className="technologies">
                             <li>HTML</li>
                             <li>CSS</li>
                             <li>SASS</li>
