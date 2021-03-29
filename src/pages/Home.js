@@ -19,7 +19,6 @@ export default function Home() {
         <div>
             <section className="section" id="intro">
 
-
                 <Row gutter={{ xs: 16, sm: 32, md: 48, lg: 64 }}>
                     <Col className="gutter-row" xl={8} lg={8} md={8} sm={24}>
                         <img className="portrait" src="https://res.cloudinary.com/drantho/image/upload/v1614876275/jtlw9xzwwwwgayavxqyk.jpg" />
