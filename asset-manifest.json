@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.ed5fdd23.chunk.css",
-    "main.js": "/portfolio/static/js/main.56cd18da.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.56cd18da.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.43d9a0ba.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.43d9a0ba.js.map",
-    "static/css/2.de2ac02e.chunk.css": "/portfolio/static/css/2.de2ac02e.chunk.css",
-    "static/js/2.cc051db2.chunk.js": "/portfolio/static/js/2.cc051db2.chunk.js",
-    "static/js/2.cc051db2.chunk.js.map": "/portfolio/static/js/2.cc051db2.chunk.js.map",
-    "index.html": "/portfolio/index.html",
-    "static/css/2.de2ac02e.chunk.css.map": "/portfolio/static/css/2.de2ac02e.chunk.css.map",
-    "static/css/main.ed5fdd23.chunk.css.map": "/portfolio/static/css/main.ed5fdd23.chunk.css.map",
-    "static/js/2.cc051db2.chunk.js.LICENSE.txt": "/portfolio/static/js/2.cc051db2.chunk.js.LICENSE.txt",
-    "static/media/style.css": "/portfolio/static/media/daniel-koponyas-9MKEpRaAt6Y-unsplash.1f7ace3d.jpg"
+    "main.css": "/Portfolio/static/css/main.eada868d.chunk.css",
+    "main.js": "/Portfolio/static/js/main.56cd18da.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.56cd18da.chunk.js.map",
+    "runtime-main.js": "/Portfolio/static/js/runtime-main.554e0ebb.js",
+    "runtime-main.js.map": "/Portfolio/static/js/runtime-main.554e0ebb.js.map",
+    "static/css/2.de2ac02e.chunk.css": "/Portfolio/static/css/2.de2ac02e.chunk.css",
+    "static/js/2.cc051db2.chunk.js": "/Portfolio/static/js/2.cc051db2.chunk.js",
+    "static/js/2.cc051db2.chunk.js.map": "/Portfolio/static/js/2.cc051db2.chunk.js.map",
+    "index.html": "/Portfolio/index.html",
+    "static/css/2.de2ac02e.chunk.css.map": "/Portfolio/static/css/2.de2ac02e.chunk.css.map",
+    "static/css/main.eada868d.chunk.css.map": "/Portfolio/static/css/main.eada868d.chunk.css.map",
+    "static/js/2.cc051db2.chunk.js.LICENSE.txt": "/Portfolio/static/js/2.cc051db2.chunk.js.LICENSE.txt",
+    "static/media/style.css": "/Portfolio/static/media/daniel-koponyas-9MKEpRaAt6Y-unsplash.1f7ace3d.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.43d9a0ba.js",
+    "static/js/runtime-main.554e0ebb.js",
     "static/css/2.de2ac02e.chunk.css",
     "static/js/2.cc051db2.chunk.js",
-    "static/css/main.ed5fdd23.chunk.css",
+    "static/css/main.eada868d.chunk.css",
     "static/js/main.56cd18da.chunk.js"
   ]
 }
