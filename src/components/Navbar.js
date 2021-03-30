@@ -14,12 +14,17 @@ export default function Navbar() {
 
     const scrollWithOffset = element => {
         const yCoordinate = element.getBoundingClientRect().top + window.pageYOffset;
-        const yOffset = -75; 
-        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' }); 
+        const yOffset = -75;
+        window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
     }
 
     return (
         <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" theme="dark">
+            <Menu.Item key="logo">
+                <HashLink smooth to="/home#intro" scroll={element => scrollWithOffset(element)}>
+                    Anthony Mitchell
+                </HashLink>
+            </Menu.Item>
             <Menu.Item key="intro">
                 <HashLink smooth to="/home#intro" scroll={element => scrollWithOffset(element)}>
                     Intro
