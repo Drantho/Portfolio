@@ -1,11 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
 import Navbar from "./components/Navbar";
 import { Layout } from 'antd';
 import Project from "./pages/Project";
-const { Header, Footer, Sider, Content } = Layout;
+const { Header, Content } = Layout;
 
 function App() {
   return (

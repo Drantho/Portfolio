@@ -25,11 +25,11 @@ export default function Project() {
                     />
                 }
             /><br />
-            {project.live && <><strong>Live: </strong><a target="_blank" href={project.live}>{project.live}</a><br /></>}
+            {project.live && <><strong>Live: </strong><a target="_blank" rel="noreferrer" href={project.live}>{project.live}</a><br /></>}
 
-            {project.github && <><strong>Github: </strong><a target="_blank" href={project.github}>{project.github}</a><br /></>}
+            {project.github && <><strong>Github: </strong><a target="_blank" rel="noreferrer" href={project.github}>{project.github}</a><br /></>}
 
-            {project.codepen && <><strong>Codepen: </strong><a target="_blank" href={project.codepen}>{project.codepen}</a><br /></>}
+            {project.codepen && <><strong>Codepen: </strong><a target="_blank" rel="noreferrer" href={project.codepen}>{project.codepen}</a><br /></>}
 
 
             <Row gutter={{ xs: 16, sm: 32, md: 48, lg: 64 }}>

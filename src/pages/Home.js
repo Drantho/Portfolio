@@ -21,7 +21,7 @@ export default function Home() {
 
                 <Row gutter={{ xs: 16, sm: 32, md: 48, lg: 64 }}>
                     <Col className="gutter-row" xl={8} lg={8} md={8} sm={24}>
-                        <img className="portrait" src="https://res.cloudinary.com/drantho/image/upload/v1614876275/jtlw9xzwwwwgayavxqyk.jpg" />
+                        <img alt="Anthony Mitchell portrait" className="portrait" src="https://res.cloudinary.com/drantho/image/upload/v1614876275/jtlw9xzwwwwgayavxqyk.jpg" />
                     </Col>
                     <Col className="gutter-row" xl={16} lg={16} md={16} sm={24}>
                         <Row gutter={{ xs: 16, sm: 32, md: 48, lg: 64 }} justify="center">
@@ -32,7 +32,7 @@ export default function Home() {
                         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="center">
                             <Col className="gutter-row" xl={20} lg={20} md={20} sm={24}>
                                 <Carousel
-                                    autoplay
+                                    autoplay={true}
                                     autoplaySpeed={4500}
                                     beforeChange={changeVerb}
                                     dotPosition="top"
@@ -40,22 +40,22 @@ export default function Home() {
                                 >
                                     <div className="panel">
                                         <Link to="/project/gameoflife">
-                                            <video muted autoplay="true" loop="true" src="https://res.cloudinary.com/drantho/video/upload/c_fill,w_670/v1615510871/ezgif.com-gif-maker_cjf7al.webm" />
+                                            <video muted autoPlay={true} loop={true} src="https://res.cloudinary.com/drantho/video/upload/c_fill,w_670/v1615510871/ezgif.com-gif-maker_cjf7al.webm" />
                                         </Link>
                                     </div>
                                     <div className="panel">
                                         <Link to="/project/nobrainermeals">
-                                            <img src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1614075793/nobrainermeals_e1bpca.png" />
+                                            <img alt="No Brainer Meals screen shot" src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1614075793/nobrainermeals_e1bpca.png" />
                                         </Link>
                                     </div>
                                     <div className="panel">
                                         <Link to="maintenance">
-                                            <img src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638401/mervin_graph_ijbjjr.png" />
+                                            <img alt="Maintenance App screen shot" src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638401/mervin_graph_ijbjjr.png" />
                                         </Link>
                                     </div>
                                     <div className="panel">
                                         <Link to="peninsularv">
-                                            <img src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638834/screenshot-penrv.com-2021.03.24-19_18_14_gpjplw.png" />
+                                            <img alt="Peninsula RV screen shot" src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638834/screenshot-penrv.com-2021.03.24-19_18_14_gpjplw.png" />
                                         </Link>
                                     </div>
                                 </Carousel>
@@ -69,9 +69,9 @@ export default function Home() {
 
                 <Space direction="vertical">
                     <Row className="gutter-row" xl={16} lg={16} md={16} sm={24}>
-                        {data.map(item => {
+                        {data.map((item, i) => {
                             return <Col xl={8} lg={8} md={12} sm={24}>
-                                <ProjectCard {...item} />
+                                <ProjectCard key={i} {...item} />
                             </Col>
                         })}
                     </Row>

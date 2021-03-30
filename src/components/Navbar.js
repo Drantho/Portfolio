@@ -1,7 +1,6 @@
 import { React, useState } from 'react'
 import { Menu } from 'antd';
 import { HashLink } from 'react-router-hash-link';
-import { Layout, Header, Content } from "antd";
 
 export default function Navbar() {
 
