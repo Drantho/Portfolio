@@ -70,8 +70,8 @@ export default function Home() {
                 <Space direction="vertical">
                     <Row className="gutter-row" xl={16} lg={16} md={16} sm={24}>
                         {data.map((item, i) => {
-                            return <Col xl={8} lg={8} md={12} sm={24}>
-                                <ProjectCard key={i} {...item} />
+                            return <Col key={i} xl={8} lg={8} md={12} sm={24}>
+                                <ProjectCard {...item} />
                             </Col>
                         })}
                     </Row>
