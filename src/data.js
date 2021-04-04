@@ -215,27 +215,6 @@ const data = [
         codepen: "https://codepen.io/drantho/pen/YVMzjG"
     },
     {
-        displayName: "What to Do",
-        name: "WhatToDo",
-        image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075804/whattodo_ohsdh1.png",
-        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080/v1614075804/whattodo_ohsdh1.png",
-        technologies: [
-            "HTML",
-            "CSS",
-            "Javascript",
-            "JQuery",
-            "Materialize CSS"
-        ],
-        features: [
-            "View calendar by day, week, or month.",
-            "Add custom categorized events.",
-            "View and add suggested activities by type.",
-            "View and cycle through inspirational quotes."
-        ],
-        github: "https://github.com/Z1springer/what_to_do",
-        live: "https://z1springer.github.io/what_to_do/"
-    },
-    {
         displayName: "State Contiguity Chart",
         name: "StateContiguity",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075803/statecontiguity_jldxtr.png",
@@ -311,26 +290,6 @@ const data = [
         ],
         github: "https://github.com/Drantho/votingapp",
         live: ""
-    },
-    {
-        displayName: "Random Password Generator",
-        name: "RandomPasswordGenerator",
-        image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075799/passwordgen_wupskx.png",
-        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080/v1614075799/passwordgen_wupskx.png",
-        technologies: [
-            "HTML",
-            "CSS",
-            "Javascript",
-        ],
-        features: [
-            "User can select what type of characters to include in password",
-            "User can select length of password",
-            "User can view settings",
-            "User is provided with select password link",
-            "User can manually customize password",
-        ],
-        github: "https://github.com/Drantho/PasswordGenerator",
-        live: "https://drantho.github.io/PasswordGenerator/"
     },
     {
         displayName: "Minterest",
