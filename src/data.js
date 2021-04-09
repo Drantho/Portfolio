@@ -287,18 +287,13 @@ const data = [
             "HTML",
             "CSS",
             "Javascript",
-            "Mongo",
             "Express",
             "Node",
-            "Handlebars",
-            "Material Design            ",
+            "Socket.io"
         ],
         features: [
-            "Users can create custom polls",
-            "Users can add responses to polls",
-            "Users can respond to polls",
-            "Users can tweet polls",
-            "Users can view chart of poll responses            ",
+            "Users can enter stock symbols to view stock price history",
+            "Users can view in real time all users' searches overlayed through socket.io"
         ],
         role: ["Solo Project"],
         github: "https://github.com/Drantho/votingapp",

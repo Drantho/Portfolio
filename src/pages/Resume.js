@@ -22,7 +22,7 @@ function Resume() {
         <div className="section">
             <Title style={styles.centeredHeading}>Anthony Mitchell</Title>
             <p style={styles.centeredContent}>
-                <a href="mailto:mitchellanthonyd@gmail.com">mitchellanthonyd@gmail.com</a> | <a href="tel:3609125494">360.912.5494</a> | Sequim, WA 98382<br/>
+                <a href="mailto:mitchellanthonyd@gmail.com">mitchellanthonyd@gmail.com</a> | Sequim, WA 98382<br/>
                 LinkedIn: <a href="https://www.linkedin.com/in/drantho/">linkedin.com/in/drantho</a> | Github:  <a href="https://github.com/Drantho">github.com/Drantho</a>  | Portfolio: <a href="http://anthonymitchell.info/">anthonymitchell.info</a>
             </p>
             <Title level={2} style={styles.mainHeading}>
