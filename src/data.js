@@ -28,6 +28,7 @@ const data = [
             "Users can leave comments",
             "Users can follow links to buy directly online",
         ],
+        role: ["Solo Project/Full Stack"],
         github: "",
         live: "https://www.nobrainermeals.com"
     },
@@ -49,6 +50,7 @@ const data = [
             "Quiz ends at 0 seconds or all questions answered",
             "Users' top 10 high scores are saved in local storage.",
         ],
+        role: ["Solo Project"],
         github: "https://github.com/Drantho/QuizApp",
         live: "https://drantho.github.io/QuizApp/"
     },
@@ -101,13 +103,14 @@ const data = [
             "Users can see chart of global land surface average temp by month",
             "Users can see specific month data"
         ],
+        role: "Solo Project",
         github: "",
         live: "https://cdpn.io/drantho/debug/bRzyVa/xnMabmvYwEjr",
         codepen: "https://codepen.io/drantho/pen/bRzyVa"
     },
     {
-        displayName: "So Thirsty",
-        name: "SoThirsty",
+        displayName: "Plant Care App",
+        name: "PlantCare",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075801/sothirsty_e6sue6.png",
         largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080/v1614075801/sothirsty_e6sue6.png",
         technologies: [
@@ -139,6 +142,7 @@ const data = [
             "Send email invitation with private link with Authentication url",
             "Revoke limited user access"
         ],
+        role: ["Project Manager", "Back end/data"],
         github: "https://github.com/Calmanning/so_thirsty",
         live: "https://sothirstyproject.herokuapp.com/"
     },
@@ -168,6 +172,7 @@ const data = [
             "Visitors can see lists of users ranked by relevant searches",
             "Visitors can search by distance from desired location            ",
         ],
+        role: ["Solo Project/Full Stack", "Work with client"],
         github: "",
         live: "https://therapysoon.com/"
     },
@@ -208,11 +213,13 @@ const data = [
             "JQuery",
         ],
         features: [
-            "Users can play the Game of Life!"
+            "Users can play Conway's Game of Life!"
         ],
+        role: ["Solo Project"],
         github: "",
         live: "https://cdpn.io/drantho/debug/YVMzjG/LQkExgVEXvLA",
-        codepen: "https://codepen.io/drantho/pen/YVMzjG"
+        codepen: "https://codepen.io/drantho/pen/YVMzjG",
+        moreInfo: "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
     },
     {
         displayName: "State Contiguity Chart",
@@ -230,6 +237,7 @@ const data = [
             "Users can view world state contiguity map",
             "Users can click and drag stretchy border connections and rearrange chart",
         ],
+        role: ["Solo Project"],
         github: "",
         live: "https://cdpn.io/drantho/debug/WOBrKw/dGMXWjmEgqqk",
         codepen: "https://codepen.io/drantho/details/WOBrKw"
@@ -263,6 +271,7 @@ const data = [
             "Users can browse repairs by date or machine",
             "Users can view printable repair time reports by month, department, and machine            ",
         ],
+        role: ["Solo Project", "Work with client"],
         github: "",
         live: ""
     },
@@ -288,6 +297,7 @@ const data = [
             "Users can tweet polls",
             "Users can view chart of poll responses            ",
         ],
+        role: ["Solo Project"],
         github: "https://github.com/Drantho/votingapp",
         live: ""
     },
@@ -309,6 +319,7 @@ const data = [
         features: [
             "Pinterest clone"
         ],
+        role: ["Solo Project"],
         github: "",
         live: ""
     }

@@ -49,12 +49,12 @@ export default function Home() {
                                         </Link>
                                     </div>
                                     <div className="panel">
-                                        <Link to="maintenance">
+                                        <Link to="/project/maintenance">
                                             <img alt="Maintenance App screen shot" src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638401/mervin_graph_ijbjjr.png" />
                                         </Link>
                                     </div>
                                     <div className="panel">
-                                        <Link to="peninsularv">
+                                        <Link to="/project/peninsularv">
                                             <img alt="Peninsula RV screen shot" src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638834/screenshot-penrv.com-2021.03.24-19_18_14_gpjplw.png" />
                                         </Link>
                                     </div>
@@ -83,6 +83,12 @@ export default function Home() {
                     <Col xl={12} lg={12} md={12} sm={24}>
                         <p>
                             My name is Anthony Mitchell and I am a full-stack web developer. I create functional and stylish web apps from the ground up using the C#/.NET stack and the MERN stack. I am currently available to take on projects. See my portfolio for examples of my work. Please contact me with your questions.
+                        </p>
+                        <p>
+                            <Link to="/resume">View Resume</Link> 
+                        </p>
+                        <p>
+                            <a href="/assets/resume.docx">Download Resume</a>
                         </p>
                     </Col>
                     <Col xl={12} lg={12} md={12} sm={24}>

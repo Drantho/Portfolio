@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import { Layout } from 'antd';
 import Project from "./pages/Project";
+import Resume from "./pages/Resume";
 const { Header, Content } = Layout;
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
             </Route>
             <Route exact path="/project/:name">
               <Project/>
+            </Route>
+            <Route exact path="/resume">
+                <Resume/>
             </Route>
             <Route path="*">
               <Home />

@@ -2,12 +2,19 @@ import React from 'react';
 import { useParams } from "react-router-dom";
 import { Image, Space, Row, Col } from 'antd';
 import data from "../data";
+import Title from 'antd/lib/typography/Title';
 
 export default function Project() {
 
     const { name } = useParams();
 
     const project = data.find(item => item.name.toLocaleLowerCase() === name.toLocaleLowerCase());
+
+    const styles = {
+        headingStyles: {
+            color: "#FFF"
+        }
+    }
 
     return (
 
@@ -25,6 +32,14 @@ export default function Project() {
                     />
                 }
             /><br />
+            
+            {project.role && <>
+            <Title level={3} style={styles.headingStyles}>Role: </Title>
+            <ul>
+                {project.role.map((role, i) => <li key={i}>{role}</li>)}
+            </ul>
+            </>}            
+
             {project.live && <><strong>Live: </strong><a target="_blank" rel="noreferrer" href={project.live}>{project.live}</a><br /></>}
 
             {project.github && <><strong>Github: </strong><a target="_blank" rel="noreferrer" href={project.github}>{project.github}</a><br /></>}
@@ -34,13 +49,13 @@ export default function Project() {
 
             <Row gutter={{ xs: 16, sm: 32, md: 48, lg: 64 }}>
                 <Col className="gutter-row" xl={12} sm={24}>
-                    <h3>Features</h3>
+                    <Title level={3} style={styles.headingStyles}>Features</Title>
                     <ul>
                         {project.features.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>
                 </Col>
                 <Col className="gutter-row" xl={12} sm={24}>
-                    <h3>Technologies</h3>
+                    <Title level={3} style={styles.headingStyles}>Technologies</Title>
                     <ul>
                         {project.technologies.map((item, i) => <li key={i}>{item}</li>)}
                     </ul>

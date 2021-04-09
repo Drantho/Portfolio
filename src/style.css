@@ -90,6 +90,10 @@ p, .technologies li, h3{
     padding: 100px 0 0 0;
 }
 
+.resume-ul li{
+    font-size: 1.25em;
+}
+
 @media only screen and (max-width: 600px) {
     .ant-layout{
         width: 100%;
