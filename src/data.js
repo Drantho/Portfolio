@@ -84,6 +84,7 @@ const data = [
             "Users can generate salesman commission documents",
             "Users can track customer leads and search inventory with ranked results            ",
         ],
+        role: ["Solo Project"],
         github: "",
         live: ""
     },
@@ -103,9 +104,9 @@ const data = [
             "Users can see chart of global land surface average temp by month",
             "Users can see specific month data"
         ],
-        role: "Solo Project",
+        role: ["Solo Project"],
         github: "",
-        live: "https://cdpn.io/drantho/debug/bRzyVa/xnMabmvYwEjr",
+        live: "https://codepen.io/drantho/full/bRzyVa",
         codepen: "https://codepen.io/drantho/pen/bRzyVa"
     },
     {
@@ -159,15 +160,16 @@ const data = [
             "Material Design",
             ".NET",
             "C#",
-            "MSSQL            ",
+            "MSSQL",
+            "Authorizenet"
         ],
         features: [
             "Admin users can create custom professional therapist categories",
             "Admin users can review and approve professional therapist applicants",
             "Users can apply to put detailed listing on site",
-            "Users can pay for service with monthly online billing",
+            "Users can pay for service with monthly online billing through Authorizenet",
             "Users can upload photos",
-            "Users can set availability",
+            "Users can set availability",            
             "Visitors can search for therapists by custom criteria",
             "Visitors can see lists of users ranked by relevant searches",
             "Visitors can search by distance from desired location            ",
@@ -198,6 +200,7 @@ const data = [
             "Background changes based on weather description.",
             "UV warnings color-coded by severity.",
         ],
+        role: ["Solo Project"],
         github: "https://github.com/Drantho/WeatherApp",
         live: "https://drantho.github.io/WeatherApp/"
     },
@@ -217,7 +220,7 @@ const data = [
         ],
         role: ["Solo Project"],
         github: "",
-        live: "https://cdpn.io/drantho/debug/YVMzjG/LQkExgVEXvLA",
+        live: "https://codepen.io/drantho/full/YVMzjG",
         codepen: "https://codepen.io/drantho/pen/YVMzjG",
         moreInfo: "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
     },
@@ -299,7 +302,7 @@ const data = [
         ],
         role: ["Solo Project"],
         github: "https://github.com/Drantho/votingapp",
-        live: ""
+        live: "https://arcane-escarpment-30527.herokuapp.com/"
     },
     {
         displayName: "Minterest",
