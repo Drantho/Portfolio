@@ -1,5 +1,6 @@
 const data = [
     {
+        type: "personal",
         displayName: "No Brainer Meals",
         name: "NoBrainerMeals",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075793/nobrainermeals_e1bpca.png",
@@ -33,6 +34,7 @@ const data = [
         live: "https://www.nobrainermeals.com"
     },
     {
+        type: "personal",
         displayName: "Quiz App",
         name: "Quiz",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075793/quiz_z8dyyg.png",
@@ -55,6 +57,7 @@ const data = [
         live: "https://drantho.github.io/QuizApp/"
     },
     {
+        type: "personal",
         displayName: "Peninsula RV",
         name: "PeninsulaRV",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075793/peninsularv_tyij9b.png",
@@ -89,6 +92,7 @@ const data = [
         live: ""
     },
     {
+        type: "personal",
         displayName: "Monthly Land Surface Temperature Graph",
         name: "MonthlyLandSurfaceTempGraph",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075795/tempgraph_ckuoar.png",
@@ -110,6 +114,7 @@ const data = [
         codepen: "https://codepen.io/drantho/pen/bRzyVa"
     },
     {
+        type: "personal",
         displayName: "Plant Care App",
         name: "PlantCare",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075801/sothirsty_e6sue6.png",
@@ -148,6 +153,7 @@ const data = [
         live: "https://sothirstyproject.herokuapp.com/"
     },
     {
+        type: "personal",
         displayName: "Therapy Soon",
         name: "TherapySoon",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075802/therapysoon_zzfrgl.png",
@@ -179,6 +185,7 @@ const data = [
         live: "https://therapysoon.com/"
     },
     {
+        type: "personal",
         displayName: "Weather App",
         name: "WeatherApp",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075793/weather_p67baq.png",
@@ -205,6 +212,7 @@ const data = [
         live: "https://drantho.github.io/WeatherApp/"
     },
     {
+        type: "personal",
         displayName: "Game of Life",
         name: "GameOfLife",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075786/gameoflife_eaarj6.png",
@@ -225,6 +233,7 @@ const data = [
         moreInfo: "https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life"
     },
     {
+        type: "personal",
         displayName: "State Contiguity Chart",
         name: "StateContiguity",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075803/statecontiguity_jldxtr.png",
@@ -246,6 +255,7 @@ const data = [
         codepen: "https://codepen.io/drantho/details/WOBrKw"
     },
     {
+        type: "personal",
         displayName: "Machine Maintenance",
         name: "Maintenance",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075786/maintenance_p6abtp.png",
@@ -279,6 +289,7 @@ const data = [
         live: ""
     },
     {
+        type: "personal",
         displayName: "Chart the Stock Market",
         name: "ChartTheStockMarket",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075800/stockmarket_dupkpx.png",
@@ -300,6 +311,7 @@ const data = [
         live: "https://arcane-escarpment-30527.herokuapp.com/"
     },
     {
+        type: "personal",
         displayName: "Minterest",
         name: "Minterest",
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075804/minterest_xzj1sh.png",
@@ -320,6 +332,153 @@ const data = [
         role: ["Solo Project"],
         github: "",
         live: ""
+    },
+    {
+        type: "simpleview",
+        displayName: "Visit Las Vegas",
+        name: "VisitLasVegas",
+        role: ["CMS Developer"],
+        image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475,f_auto/v1655487317/portfolio/vlv_screenshot_unc1i0.png",
+        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,f_auto/v1655487317/portfolio/vlv_screenshot_unc1i0.png",
+        imageList: [
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,h_600,f_auto/v1655487317/portfolio/vlv_screenshot_unc1i0.png",
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,h_600,f_auto/v1655703444/portfolio/vegas2_qdw34p.png",
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,h_600,f_auto/v1655703696/portfolio/vegas3_w7buwk.png",
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,h_600,f_auto/v1655704057/portfolio/vegas4_swf0hx.png",
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,h_600,f_auto/v1655704059/portfolio/vegas5_ablxbo.png",
+        ],
+        technologies: [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "JQuery",
+            "Goatee",
+            "Vue"
+        ],
+        features: [
+            "Travel and Tourism website",
+            "Show media collections in multiple formats",
+            "Show listings, events, and coupons from partners.",
+            "Create and show blog posts and articles",
+            "Track visitor data for partners."
+        ],
+        projects : [
+            {
+                name: "Vegas Means Business redesign",
+                description: "Website devoted to Las Vegas convention services.",
+                work: [
+                    "Implement design changes from photoshop specs",
+                    "Peer review code",
+                    "Create test pages for client feedback",
+                    "Recommend and implement changes based on client communication"
+                ],
+                image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,f_auto/v1655487692/portfolio/vmb_screenshot_cclxxs.png",
+                link: "https://www.vegasmeansbusiness.com/"
+            },
+            {
+                name: "Visit Las Vegas weddings quiz micro site",
+                description: "Microsite with multiple choice quiz to help visitors determine their wedding style. Quiz calculates results and redirects to description pages where visitors can explore venues.",
+                work: [
+                    "Scope client request",
+                    "Clarify needs to complete client request",
+                    "Create customizable quiz with redirect to results pages based on answers",
+                    "Recommend and implement changes based on client communication"
+                ],
+                image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,f_auto/v1655692923/portfolio/vlv_quiz_gwsj6v.png",
+                link: "https://www.visitlasvegas.com/quiz/"
+            }
+        ],
+        github: "",
+        live: "https://www.visitlasvegas.com"
+    },
+    {
+        type: "simpleview",
+        displayName: "Visit Norway",
+        name: "VisitNorway",
+        role: ["CMS Developer"],
+        image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475,f_auto/v1655693592/portfolio/visit_norway_iuum8q.png",
+        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,f_auto/v1655693592/portfolio/visit_norway_iuum8q.png",
+        technologies: [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "JQuery",
+            "Goatee",
+            "Vue"
+        ],
+        features: [
+            "Travel and Tourism website",
+            "Show media collections in multiple formats",
+            "Show listings, events, and coupons from partners.",
+            "Create and show blog posts and articles",
+            "Track visitor data for partners."
+        ],
+        projects : [
+            {
+                name: "Norway Lights microsite deploy",
+                description: "Website consumes multiple APIs to give recommendations on locations and chances to view the Northern Lights.",
+                work: [
+                    "Build site from photoshop specs",
+                    "Peer review code",
+                    "Create test pages for client feedback",
+                ],
+                image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1085,f_auto/v1655693752/portfolio/norway_lights_yshoa1.png",
+                link: "https://www.norway-lights.com/"
+            }
+        ],
+        github: "",
+        live: "https://www.visitnorway.com"
+    },
+    {
+        type: "simpleview",
+        displayName: "Visit Orlando",
+        name: "VisitOrlando",
+        role: ["CMS Developer"],
+        image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475,f_auto/v1655695981/portfolio/visit_orlando_ewgddl.png",
+        largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1085,f_auto/v1655695981/portfolio/visit_orlando_ewgddl.png",
+        technologies: [
+            "HTML",
+            "CSS",
+            "Javascript",
+            "JQuery",
+            "Goatee",
+            "Vue"
+        ],
+        features: [
+            "Travel and Tourism website",
+            "Show media collections in multiple formats",
+            "Show listings, events, and coupons from partners.",
+            "Create and show blog posts and articles",
+            "Track visitor data for partners."
+        ],
+        projects : [
+            {
+                name: "Rebrand/Redesign",
+                description: "Client supplied rebrand redesign.",
+                work: [
+                    "Implement design changes from Figma specs",
+                    "Peer review code",
+                    "Create test pages for client feedback",
+                    "Recommend and implement changes based on client communication",
+                    "Refactor CSS sitewide to implement multiple style templates using variables"
+                ],
+                image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1085,f_auto/v1655695981/portfolio/visit_orlando_ewgddl.png",
+                link: "https://www.visitorlando.com/"
+            },
+            {
+                name: "Performance improvements",
+                description: "Address site LCP and CLS performance issues.",
+                work: [
+                    "Analize individual widgets for problems.",
+                    "Fixed issues involving lazy loaded images reducing LCP from 20s to 4s.",
+                    "Fixed client side Vue render issues reducing CLS from 0.9 to 0.09."
+                ],
+                image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1085,f_auto/v1655695981/portfolio/visit_orlando_ewgddl.png",
+                link: "https://www.visitorlando.com/"
+            }
+        ],
+        github: "",
+        live: "https://www.visitorlando.com"
     }
 ]
 

@@ -1,6 +1,9 @@
 import { React, useState } from 'react'
 import { Menu } from 'antd';
 import { HashLink } from 'react-router-hash-link';
+import { Children } from 'react/cjs/react.production.min';
+
+const { SubMenu } = Menu;
 
 export default function Navbar() {
 
@@ -17,6 +20,20 @@ export default function Navbar() {
         window.scrollTo({ top: yCoordinate + yOffset, behavior: 'smooth' });
     }
 
+    const getItem = (label, key, icon, children, theme) => {
+        return {
+            key,
+            icon,
+            children,
+            label,
+            theme,
+        };
+    }
+
+    const items = [
+
+    ]
+
     return (
         <Menu onClick={handleClick} selectedKeys={[current]} mode="horizontal" theme="dark">
             <Menu.Item key="logo">
@@ -29,11 +46,26 @@ export default function Navbar() {
                     Intro
                 </HashLink>
             </Menu.Item>
-            <Menu.Item key="portfolio">
-                <HashLink smooth to="/home#portfolio" scroll={element => scrollWithOffset(element)}>
-                    Portfolio
-                </HashLink>
-            </Menu.Item>
+            <SubMenu
+            key="sub1"
+            theme="dark"
+            title={
+                <span>
+                <span>Portfolio</span>
+                </span>
+            }
+            >
+                <Menu.Item key="1">
+                    <HashLink smooth to="/home#simpleview" scroll={element => scrollWithOffset(element)}>
+                        Simpleview
+                    </HashLink>
+                </Menu.Item>
+                <Menu.Item key="2">
+                    <HashLink smooth to="/home#personal" scroll={element => scrollWithOffset(element)}>
+                        Personal
+                    </HashLink>
+                </Menu.Item>
+            </SubMenu>
             <Menu.Item key="about">
                 <HashLink smooth to="/home#about" scroll={element => scrollWithOffset(element)}>
                     About

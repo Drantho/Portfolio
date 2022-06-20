@@ -1,10 +1,11 @@
-body{
+body {
     background-color: black;
     color: white;
+    overflow-x: hidden;
 }
 
-body::before{
-    background-image: url("./images/daniel-koponyas-9MKEpRaAt6Y-unsplash.jpg");
+body::before {
+    background-image: url("https://res.cloudinary.com/drantho/image/upload/,f_auto,q_65/v1654916389/daniel-koponyas-9MKEpRaAt6Y-unsplash_o1havx.jpg");
     background-size:cover;
     content: "";
     position: fixed;
@@ -17,67 +18,133 @@ body::before{
     z-index: -1;
 }
 
-.ant-layout-header, .ant-menu-dark{
+.ant-layout-header, .ant-menu-dark {
     background: rgba(0, 0, 0, 0.6) !important;
+    width: 100%;
 }
 
-.logo {
-  
+.ant-layout-content {
+    margin: 50px 25px !important;
 }
 
-h1, h2, h3{
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
     color: white;
 }
 
-h2{
+h2 {
     font-size: 2rem;
 }
 
-p, .technologies li, h3{
-    font-size: 1.2rem;
+p, .technologies li, h3 {
+    font-size: 0.9rem;
     letter-spacing: 2.1px;
 }
 
-.ant-col{
-    padding: 25px;
-}
-
-.ant-layout{
+.ant-layout {
     background: unset;
 }
 
-.section{
-    min-height: 600px;
+.gutter-row {
+    margin: 0 0 50px 0;
+}
+
+.ant-col {
+    padding: 0 25px !important;
+}
+
+.ant-card:hover {
+    outline: 6px solid #1890ff;
+}
+
+.ant-card-cover {
+    overflow: hidden;
+    aspect-ratio: 475 / 240;
+}
+
+.ant-card-cover img {
+    width: 100%;
     height: auto;
+    aspect-ratio: 475 / 240;
+    transition: width 0.5s ease-out;
+}
+
+.ant-card:hover img {
+    width: 110%;
+}
+
+
+element.style {
+    display: block;
+}
+
+.left-align.ant-image {
+    display: inline;
+}
+
+.ant-carousel {
+    max-width: 1000px;
     margin: auto;
-    width: 90%;
+}
+
+.ant-carousel .slick-dots-bottom {
+    bottom: -22px;
+}
+
+.section {
+    margin: auto;
+    width: 100%;
     color: white;
 }
 
-.panel{
-    height: 600px;
-    width: 100%;
-    position: relative;
+.info {
+    height: 100%;
+    margin: 0 auto;
+    padding: 25px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    outline: 0.5px solid rgba(255, 255, 255, 0.6);
 }
 
-.panel img, .panel video{
+.panel {
     width: 100%;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.panel img, .panel video {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 800 / 350;
     display: block;
     margin: auto;
     border: 2px solid white;
 }
 
-.portrait{
+.portrait {
     border-radius: 50%;
     width: 100%;
-    margin: 50px 0 0 0;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 20px 0 0;
+    /* padding: 25%; */
 }
 
-.intro-text{
-    font-size: 2.5rem;
+
+.intro-text {
+    font-size: 1.5rem;
 }
 
-.ant-carousel .slick-dots li{
+.verb {
+    text-align: center;
+    font-size: 3.5rem;
+    font-style: italic;
+}
+
+.ant-carousel .slick-dots li {
     background-color: rgba(0, 0, 0, 0.6);
 }
 
@@ -86,59 +153,61 @@ p, .technologies li, h3{
     color:#1890ff !important;
 }
 
-#contact .ant-row{
-    padding: 100px 0 0 0;
+#contact .ant-row {
+    padding: 10px 0 0 0;
 }
 
-.resume-ul li{
+.ant-col-sm-24 {
+    /* margin: auto; */
+}
+
+.resume-ul li {
     font-size: 1.25em;
 }
 
-@media only screen and (max-width: 600px) {
-    .ant-layout{
+@media only screen and (min-width: 600px) {
+    .verb {
+        margin-bottom: 0;
+    }
+
+    .ant-col {
+        padding: 25px;
+    }
+
+    .intro-text {
+        font-size: 2.3rem;
+    }
+
+    .section {
+        margin-top: 100px;
         width: 100%;
-    }
-
-    .ant-layout-content{
-        width: 100% !important;
-        padding: 0 !important;
-        margin: 0 !important;
-    }
-
-    .ant-col{
-        padding: 0;
-    }
-
-    .intro-text{
-        font-size: 1.5rem;
-    }
-
-    .section{
-        min-height: 600px;
-        height: auto;
-        margin: auto;
-        width: 98%;
+        max-width: 1600px;
         color: white;
     }
 
-    p, .technologies li, h3{
-        font-size: 0.9rem;
+    p, .technologies li, h3 {
+        font-size: 1.2rem;
         letter-spacing: 2.1px;
     }
 
-    .ant-col p{
-        padding: 0 20ox !important;
+    #contact .ant-row {
+        padding: 100px 0 0 0;
     }
 
-    #contact .ant-row{
-        padding: 10px 0 0 0;
+    .portrait {
+        margin-top: 50px;
+        padding: 25%;
     }
+}
 
-    .portrait{
-        padding: 45px;
+@media only screen and (min-width: 768px) {
+    .portrait {
+        padding: 15%;
     }
+}
 
-    #project{
-        margin-top: 75px;
+@media only screen and (min-width: 1200px) {
+    .portrait {
+        padding: 25%;
     }
 }

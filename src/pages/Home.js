@@ -9,24 +9,30 @@ export default function Home() {
 
     const [currentVerb, setCurrentVerb] = useState(0);
 
-    const verbs = ["move", "create", "calculate", "work"];
+    const verbs = ["create", "move", "calculate", "work"];
 
     const changeVerb = () => {
         setCurrentVerb((currentVerb + 1) % verbs.length);
     }
 
     return (
-        <div>
+        <>
             <section className="section" id="intro">
 
                 <Row gutter={{ xs: 16, sm: 32, md: 48, lg: 64 }}>
-                    <Col className="gutter-row" xl={8} lg={8} md={8} sm={24}>
-                        <img alt="Anthony Mitchell portrait" className="portrait" src="https://res.cloudinary.com/drantho/image/upload/v1614876275/jtlw9xzwwwwgayavxqyk.jpg" />
+                    <Col className="gutter-row" xl={9} lg={9} md={9} sm={24}>
+                        <picture>
+                            <source media="(max-width:599px)" srcset='https://res.cloudinary.com/drantho/image/upload/w_275,h_275,f_auto/v1614876275/jtlw9xzwwwwgayavxqyk.jpg'/>
+                            <source media="(max-width:767px)" srcset='https://res.cloudinary.com/drantho/image/upload/w_360,h_360,f_auto/v1614876275/jtlw9xzwwwwgayavxqyk.jpg'/>
+                            <source media="(min-width:768px)" srcset='https://res.cloudinary.com/drantho/image/upload/w_275,h_275,f_auto/v1614876275/jtlw9xzwwwwgayavxqyk.jpg'/>
+                            <img alt="Anthony Mitchell portrait" className="portrait" src="https://res.cloudinary.com/drantho/image/upload/f_auto/v1614876275/jtlw9xzwwwwgayavxqyk.jpg" />
+                        </picture>
                     </Col>
-                    <Col className="gutter-row" xl={16} lg={16} md={16} sm={24}>
+                    <Col className="gutter-row" xl={15} lg={15} md={15} sm={24}>
                         <Row gutter={{ xs: 16, sm: 32, md: 48, lg: 64 }} justify="center">
                             <Col className="gutter-row" xl={20} lg={20} md={20} sm={24}>
-                                <h2 className="intro-text">My name is Anthony and I build websites that {verbs[currentVerb]}</h2>
+                                <h2 className="intro-text">My name is Anthony and I build websites that</h2>
+                                <h2 className='verb'>{verbs[currentVerb]}...</h2>
                             </Col>
                         </Row>
                         <Row gutter={{ xs: 8, sm: 16, md: 24, lg: 32 }} justify="center">
@@ -39,23 +45,23 @@ export default function Home() {
                                     effect="fade"
                                 >
                                     <div className="panel">
-                                        <Link to="/project/gameoflife">
-                                            <video muted autoPlay={true} loop={true} src="https://res.cloudinary.com/drantho/video/upload/c_fill,w_670/v1615510871/ezgif.com-gif-maker_cjf7al.webm" />
+                                        <Link to="/project/nobrainermeals">
+                                            <img alt="No Brainer Meals screen shot" src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_800,h_350,g_north,f_auto/v1614075793/nobrainermeals_e1bpca.png" />
                                         </Link>
                                     </div>
                                     <div className="panel">
-                                        <Link to="/project/nobrainermeals">
-                                            <img alt="No Brainer Meals screen shot" src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1614075793/nobrainermeals_e1bpca.png" />
+                                        <Link to="/project/gameoflife">
+                                            <video muted autoPlay={true} loop={true} src="https://res.cloudinary.com/drantho/video/upload/c_fill,w_800,h_350,g_north,f_auto/v1615510871/ezgif.com-gif-maker_cjf7al.webm" />
                                         </Link>
                                     </div>
                                     <div className="panel">
                                         <Link to="/project/maintenance">
-                                            <img alt="Maintenance App screen shot" src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638401/mervin_graph_ijbjjr.png" />
+                                            <img alt="Maintenance App screen shot" loading='lazy' src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_800,h_350,g_north,f_auto/v1616638401/mervin_graph_ijbjjr.png" />
                                         </Link>
                                     </div>
                                     <div className="panel">
                                         <Link to="/project/peninsularv">
-                                            <img alt="Peninsula RV screen shot" src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_670/v1616638834/screenshot-penrv.com-2021.03.24-19_18_14_gpjplw.png" />
+                                            <img alt="Peninsula RV screen shot" loading='lazy' src="https://res.cloudinary.com/drantho/image/upload/c_fill,w_800,h_350,g_north,f_auto/v1616638834/screenshot-penrv.com-2021.03.24-19_18_14_gpjplw.png" />
                                         </Link>
                                     </div>
                                 </Carousel>
@@ -64,12 +70,26 @@ export default function Home() {
                     </Col>
                 </Row>
             </section>
-            <section className="section" id="portfolio">
-                <h2>Portfolio</h2>
+            <h2>Portfolio</h2>
+            <section className="section" id="simpleview">
+                <h3>Simpleview Projects</h3>
+                <Space direction="vertical">
+                    <Row className="gutter-row" xl={16} lg={16} md={16} sm={24}>
+                        {data.filter(item => item.type === "simpleview").map((item, i) => {
+                            return <Col key={i} xl={8} lg={8} md={12} sm={24}>
+                                <ProjectCard {...item} />
+                            </Col>
+                        })}
+                    </Row>
+                </Space>
+            </section>
+
+            <section className="section" id="personal">
+                <h3>Personal Projects</h3>
 
                 <Space direction="vertical">
                     <Row className="gutter-row" xl={16} lg={16} md={16} sm={24}>
-                        {data.map((item, i) => {
+                        {data.filter(item => item.type === "personal").map((item, i) => {
                             return <Col key={i} xl={8} lg={8} md={12} sm={24}>
                                 <ProjectCard {...item} />
                             </Col>
@@ -85,7 +105,7 @@ export default function Home() {
                             My name is Anthony Mitchell and I am a full-stack web developer. I create functional and stylish web apps from the ground up using the C#/.NET stack and the MERN stack. I am currently available to take on projects. See my portfolio for examples of my work. Please contact me with your questions.
                         </p>
                         <p>
-                            <Link to="/resume">View Resume</Link> 
+                            <Link to="/resume">View Resume</Link>
                         </p>
                         <p>
                             <a href="/assets/resume.docx">Download Resume</a>
@@ -103,11 +123,11 @@ export default function Home() {
                             <li>Bootstrap</li>
                             <li>Materialize</li>
                             <li>C#</li>
-                            <li>Blazor</li>
                             <li>SQL</li>
                             <li>Mongo</li>
                             <li>Express</li>
                             <li>React</li>
+                            <li>Vue</li>
                             <li>Node</li>
                             <li>Handlebars</li>
                         </ul>
@@ -134,6 +154,6 @@ export default function Home() {
                     </Col>
                 </Row>
             </section>
-        </div>
+        </>
     )
 }
