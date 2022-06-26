@@ -72,12 +72,30 @@ function Resume() {
             </ul>
             <Title level={2} style={styles.mainHeading}>Experience</Title>
             <Title level={3} style={styles.headingStyle}>
-                October2008 - September 2020<br/>
-                Peninsula RV, Sequim, WA- Owner/Manager
+                May 2021 - Current<br/>
+                Simpleview Inc, Tucson, AZ - CMS Developer I
             </Title>
             <ul className="resume-ul">
                 <li>Ensure compliance with state and federal regulations.</li>
                 <li>Develop, train employees in use of software tools to maintain productivity, compliance.</li>
+            </ul>
+            <Title level={3} style={styles.headingStyle}>
+                October 2008 - September 2020<br/>
+                Peninsula RV, Sequim, WA- Owner/Manager
+            </Title>
+            <ul className="resume-ul">
+                <li>
+                    Support existing code base by extending features and fixing bugs.
+                </li>
+                <li>
+                    Support existing code base by extending features and fixing bugs.
+                </li>
+                <li>
+                    Develop new features at client request.
+                </li>
+                <li>
+                    Optimize performance and accessibility.
+                </li>
             </ul>
 
             <Title level={2} style={styles.mainHeading}>Education</Title>

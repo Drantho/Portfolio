@@ -396,6 +396,12 @@ const data = [
         displayName: "Visit Norway",
         name: "VisitNorway",
         role: ["CMS Developer"],
+        imageList: [
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,h_600,f_auto/v1655693592/portfolio/visit_norway_iuum8q.png",
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,h_600,f_auto/v1656282317/portfolio/norway2_wwwr5o.png",
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,h_600,f_auto/v1656282316/portfolio/norway3_hnpidt.png",
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,h_600,f_auto/v1656282321/portfolio/norway4_zqgs65.png"
+        ],
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475,f_auto/v1655693592/portfolio/visit_norway_iuum8q.png",
         largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080,f_auto/v1655693592/portfolio/visit_norway_iuum8q.png",
         technologies: [
@@ -418,7 +424,7 @@ const data = [
                 name: "Norway Lights microsite deploy",
                 description: "Website consumes multiple APIs to give recommendations on locations and chances to view the Northern Lights.",
                 work: [
-                    "Build site from photoshop specs",
+                    "Build site widgets from photoshop specs",
                     "Peer review code",
                     "Create test pages for client feedback",
                 ],
@@ -434,6 +440,13 @@ const data = [
         displayName: "Visit Orlando",
         name: "VisitOrlando",
         role: ["CMS Developer"],
+        imageList : [
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1085,h_600,f_auto/v1655695981/portfolio/visit_orlando_ewgddl.png",
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1085,h_600,f_auto/v1656283145/portfolio/orlando2_i9qw5a.png",
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1085,h_600,f_auto/v1656283143/portfolio/orlando3_jhn8t8.png",
+            "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1085,h_600,f_auto/v1656283142/portfolio/orlando4_xvvupk.png"
+
+        ],
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475,f_auto/v1655695981/portfolio/visit_orlando_ewgddl.png",
         largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1085,f_auto/v1655695981/portfolio/visit_orlando_ewgddl.png",
         technologies: [
