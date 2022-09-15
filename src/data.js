@@ -40,8 +40,8 @@ const data = [
         image: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_475/v1614075793/quiz_z8dyyg.png",
         largeImage: "https://res.cloudinary.com/drantho/image/upload/c_fill,w_1080/v1614075793/quiz_z8dyyg.png",
         technologies: [
-            "HTM",
-            "CS",
+            "HTML",
+            "CSS",
             "Javascript",],
         features: [
             "View a series of Monty Python themed multiple choice questions",
