@@ -16,8 +16,6 @@ export default function Project() {
         }
     }
 
-    console.log('project: ', project);
-
     return (
 
         <Space direction="vertical" id="project" style={{ width: "100%", marginTop: 50 }}>

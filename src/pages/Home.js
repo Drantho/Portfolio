@@ -22,9 +22,9 @@ export default function Home() {
                 <Row gutter={{ xs: 16, sm: 32, md: 48, lg: 64 }}>
                     <Col className="gutter-row" xl={9} lg={9} md={9} sm={24}>
                         <picture>
-                            <source media="(max-width:599px)" srcset='https://res.cloudinary.com/drantho/image/upload/w_275,h_275,f_auto/v1614876275/jtlw9xzwwwwgayavxqyk.jpg'/>
-                            <source media="(max-width:767px)" srcset='https://res.cloudinary.com/drantho/image/upload/w_360,h_360,f_auto/v1614876275/jtlw9xzwwwwgayavxqyk.jpg'/>
-                            <source media="(min-width:768px)" srcset='https://res.cloudinary.com/drantho/image/upload/w_275,h_275,f_auto/v1614876275/jtlw9xzwwwwgayavxqyk.jpg'/>
+                            <source media="(max-width:599px)" srcSet='https://res.cloudinary.com/drantho/image/upload/w_275,h_275,f_auto/v1614876275/jtlw9xzwwwwgayavxqyk.jpg'/>
+                            <source media="(max-width:767px)" srcSet='https://res.cloudinary.com/drantho/image/upload/w_360,h_360,f_auto/v1614876275/jtlw9xzwwwwgayavxqyk.jpg'/>
+                            <source media="(min-width:768px)" srcSet='https://res.cloudinary.com/drantho/image/upload/w_275,h_275,f_auto/v1614876275/jtlw9xzwwwwgayavxqyk.jpg'/>
                             <img alt="Anthony Mitchell portrait" className="portrait" src="https://res.cloudinary.com/drantho/image/upload/f_auto/v1614876275/jtlw9xzwwwwgayavxqyk.jpg" />
                         </picture>
                     </Col>
@@ -71,6 +71,18 @@ export default function Home() {
                 </Row>
             </section>
             <h2>Portfolio</h2>
+            <section className="section" id="rcs">
+                <h3>RCS Union Software</h3>
+                <Space direction="vertical">
+                    <Row className="gutter-row" xl={16} lg={16} md={16} sm={24}>
+                        {data.filter(item => item.type === "rcs").map((item, i) => {
+                            return <Col key={i} xl={12} lg={12} md={12} sm={12}>
+                                <ProjectCard {...item} />
+                            </Col>
+                        })}
+                    </Row>
+                </Space>
+            </section>
             <section className="section" id="simpleview">
                 <h3>Simpleview Projects</h3>
                 <Space direction="vertical">
@@ -123,11 +135,14 @@ export default function Home() {
                             <li>Bootstrap</li>
                             <li>Materialize</li>
                             <li>C#</li>
+                            <li>Java</li>
                             <li>SQL</li>
                             <li>Mongo</li>
                             <li>Express</li>
                             <li>React</li>
+                            <li>Next.js</li>
                             <li>Vue</li>
+                            <li>Angular</li>
                             <li>Node</li>
                             <li>Handlebars</li>
                         </ul>

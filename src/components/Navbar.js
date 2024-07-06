@@ -10,7 +10,6 @@ export default function Navbar() {
     const [current, setCurrent] = useState("home");
 
     const handleClick = e => {
-        console.log('click ', e);
         setCurrent(e.key);
     };
 
@@ -56,11 +55,16 @@ export default function Navbar() {
             }
             >
                 <Menu.Item key="1">
+                    <HashLink smooth to="/home#rcs" scroll={element => scrollWithOffset(element)}>
+                        RCS Union Software
+                    </HashLink>
+                </Menu.Item>
+                <Menu.Item key="2">
                     <HashLink smooth to="/home#simpleview" scroll={element => scrollWithOffset(element)}>
                         Simpleview
                     </HashLink>
                 </Menu.Item>
-                <Menu.Item key="2">
+                <Menu.Item key="3">
                     <HashLink smooth to="/home#personal" scroll={element => scrollWithOffset(element)}>
                         Personal
                     </HashLink>

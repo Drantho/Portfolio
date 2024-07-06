@@ -62,14 +62,28 @@ p, .technologies li, h3 {
 
 .ant-card-cover {
     overflow: hidden;
+}
+
+.ant-card .ant-card-cover {
     aspect-ratio: 475 / 240;
+}
+
+.ant-card.square-ratio .ant-card-cover {
+    aspect-ratio: 800 / 700;
 }
 
 .ant-card-cover img {
     width: 100%;
     height: auto;
-    aspect-ratio: 475 / 240;
     transition: width 0.5s ease-out;
+}
+
+.wide-ratio {
+    aspect-ratio: 475 / 240;
+}
+
+.square-ratio {
+    aspect-ratio: 800 / 700;
 }
 
 .ant-card:hover img {
